@@ -1,0 +1,47 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+-- Create a Window
+local Window = Rayfield:CreateWindow({
+    Name = "Mad City Scripts",
+    LoadingTitle = "Loading Mad City GUI",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "MadCityConfig",
+        FileName = "MadCitySettings"
+    }
+})
+
+-- Create a Tab for Scripts
+local ScriptsTab = Window:CreateTab("Scripts")
+
+-- Add Button for Auto Arrest Serverhop
+ScriptsTab:CreateButton({
+    Name = "Auto Arrest Serverhop",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zglad-Creator/Open-Source-Scripts/refs/heads/main/Mad%20City%20Chapter%201/Auto%20Arrest%20Serverhop.lua"))()
+    end,
+})
+
+-- Add Button for Auto Rob
+ScriptsTab:CreateButton({
+    Name = "Auto Rob",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zglad-Creator/Open-Source-Scripts/refs/heads/main/Mad%20City%20Chapter%201/Auto%20Rob.lua"))()
+    end,
+})
+
+-- Add Button for Button Cooldown Bypass
+ScriptsTab:CreateButton({
+    Name = "Button Cooldown Bypass",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zglad-Creator/Open-Source-Scripts/refs/heads/main/Mad%20City%20Chapter%201/E-Buttons%20Cooldown%20Bypass.lua"))()
+    end,
+})
+
+-- Add Button for Punch Kill Aura
+ScriptsTab:CreateButton({
+    Name = "Punch Kill Aura",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zglad-Creator/Open-Source-Scripts/refs/heads/main/Mad%20City%20Chapter%201/Punch%20Kill%20Aura.lua"))()
+    end,
+})
